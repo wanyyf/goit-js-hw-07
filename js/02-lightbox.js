@@ -25,8 +25,9 @@ const createItem = () => {
 }
 galleryEl.insertAdjacentHTML('beforeend',createItem(galleryItems))
 
- new SimpleLightbox('.gallery a'),{
-     captionsData:"alt",
+
+ new SimpleLightbox('.gallery a',{
+    captionsData:"alt",
     captionDelay: 250,
     enableKeyboard: "true",
- };
+ });

@@ -33,14 +33,7 @@ const onLinkClick = (evt) => {
     evt.preventDefault()
     const backdrop = basicLightbox.create(`
 		<img width="1400" height="900" src="${getSrcImg.dataset.source}">
-	`).show(() => {
-        window.addEventListener("keydown", (event) => {
-            
-            if (event.code === "Escape"){
-                backdrop.close();
-            }
-        })
-    })
+	`).show()
    
 }
 galleryEl.addEventListener("click", onLinkClick)
